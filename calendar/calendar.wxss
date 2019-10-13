@@ -1,0 +1,29 @@
+.intro {
+    margin: 30px;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.week {
+    display: grid;
+    grid-template-columns: repeat(7, 14.25%);
+    margin-bottom: 10px;
+}
+
+.day-wrap {
+    display: grid;
+    grid-template-columns: repeat(7, 14.25%);
+    font-size: 24rpx;
+    color: #272726
+}
+
+.day-wrap .item-wrap.isCurrentDay {
+    background-color: #0b93ee;
+}
+
+.scroll-view{
+    height: 800rpx;
+}

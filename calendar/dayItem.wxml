@@ -1,0 +1,5 @@
+<template name="dayItem">
+    <view class="item-wrap">
+        {{day}}
+    </view>
+</template>

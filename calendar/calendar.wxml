@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="week">
+        <view>日</view>
+        <view>一</view>
+        <view>二</view>
+        <view>三</view>
+        <view>四</view>
+        <view>五</view>
+        <view>六</view>
+    </view>
+    <view>
+        <scroll-view class="scroll-view" scroll-y="true">
+            <view class="calendar-container" wx:for="{{calendars}}" wx:key="index" wx:for-item="calendar">
+                <view class="title">{{calendar.year}}年{{calendar.month + 1}}月</view>
+                <view class="day-wrap">
+                    <view class="item-wrap {{dayItem.isCurrentDay ? 'isCurrentDay' : ''}}" wx:for="{{calendar.dayItems}}" wx:key="index" wx:for-item="dayItem" style="{{(onlyShowCurrentMonthDays && !dayItem.isCurrentMonth) ? 'visibility:hidden' : ''}}">
+                        {{dayItem.day}}
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="intro">
+    <calendar only-show-current-month-days="{{true}}"></calendar>
+    <!-- <calendar only-show-current-month-days="false" date="{{date2}}"></calendar>
+    <calendar only-show-current-month-days="true" date="{{date3}}"></calendar> -->
+</view>
